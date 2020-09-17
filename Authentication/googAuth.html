@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Authentication</title>
+</head>
+<body>
+    <center>
+        <h1>Sign in With Google Account</h1>
+        <button type="button" id="googlebtn" onclick="GoogleLogin()">Google LogIn</button>
+    </center>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAf8cZCK8FBDGXApYBQOY-9frtb4trTDeQ",
+    authDomain: "googauth-a4b3a.firebaseapp.com",
+    databaseURL: "https://googauth-a4b3a.firebaseio.com",
+    projectId: "googauth-a4b3a",
+    storageBucket: "googauth-a4b3a.appspot.com",
+    messagingSenderId: "243214371684",
+    appId: "1:243214371684:web:ffd848dc72ba4339d30871",
+    measurementId: "G-HESD35L8TS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+<script src="googleAuth.js"></script>
+</html>
